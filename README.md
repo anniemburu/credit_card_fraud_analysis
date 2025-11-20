@@ -36,7 +36,7 @@ The evaluation of each model under these strategies was quantified using the fol
 ## Results
 Here is the original data in a markdown table format:
 
-``` 
+
 
 | Model           | Evaluation Strategy | Accuracy | Precision Score | Recall Score | F1 Score | APS Score | ROC-AUC |
 | :-------------: | :-----------------: | :------: | :-------------: | :----------: | :------: | :-------: | :-----: |
@@ -53,7 +53,7 @@ Here is the original data in a markdown table format:
 |                 | Precision           | 0.9982   | 0.375           | 0.1144       | 0.1753   | 0.0444    | 0.557   |
 |                 | Recall              | 0.5099   | 0.0033          | 0.9704       | 0.0065   | 0.0238    | 0.7397  |
 
-```
+
 
 
 ## Key Findings and Trends
