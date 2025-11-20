@@ -1,6 +1,4 @@
 
-
-``` markdown
 # Credit Card Analysis : Supervised vs Unsupervised
 
 ## Overview
@@ -65,5 +63,3 @@ Based on this evaluation:
 *   **Isolation Trees are not suitable** for this task given their significantly lower performance and their tendency to produce highly imprecise results when recall is maximized.
 
 Further investigation into specific business requirements and tolerance for false positives/negatives would help in selecting the absolute best model and evaluation strategy for deployment.
-
-```
