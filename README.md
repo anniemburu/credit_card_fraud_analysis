@@ -72,7 +72,7 @@ After running the project, you can analyze the results:
 
     - You will see a list of runs, where you can compare the metrics (Accuracy, F1, ROC-AUC) and artifacts (like confusion matrices) for each model (LGBM, XGBoost, CatBoost)
 
-##
+## Project Structure
 
 ```
 
