@@ -3,7 +3,7 @@ import pandas as pd
 import mlflow
 import mlflow.sklearn
 from mlflow.models import infer_signature
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, IsolationForest
 from sklearn.pipeline import Pipeline
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split, cross_val_score, StratifiedKFold
@@ -108,7 +108,7 @@ class TrainRegressors:
 
             return Pipeline(steps=[
             ('preprocessor', self.preprocess_pipeline),
-            ('regressor', (**params))
+            ('regressor', IsolationForest(**params)(**params))
             ])
     def objective(self, trial, X, y):
         with mlflow.start_run(nested=True): 
