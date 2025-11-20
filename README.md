@@ -5,6 +5,87 @@
 
 This document presents a detailed analysis of the performance of several machine learning models under different evaluation strategies. The primary goal is to identify the most effective models for a given task (implied to be a classification task based on the metrics) and understand how various evaluation approaches influence their reported performance.
 
+## 🛠️ Setup and Installation
+1. Create a Virtual Environment
+It is highly recommended to use a virtual environment to manage dependencies and avoid conflicts with other projects. You can choose between Python's built-in venv or Conda.
+
+A. Using Conda
+If you have Anaconda or Miniconda installed, use the following commands:
+
+```
+# Create a new environment named 'ml_env' with Python 3.9
+conda create -n ml_env python=3.9
+
+# Activate the environment
+conda activate ml_env
+```
+
+B. Using Python's venv
+Use the following commands from your terminal:
+
+```
+# Create a new environment named '.venv'
+python3 -m venv .venv
+
+# Activate the environment (macOS/Linux)
+source .venv/bin/activate
+
+# Activate the environment (Windows)
+.\.venv\Scripts\activate
+```
+
+2. Install Dependencies
+Once your virtual environment is active, install the required packages using the provided requirements.txt file.
+
+```
+# Install all required packages
+pip install -r requirements.txt
+```
+
+## 🏃 Running the Project
+This project uses MLflow for robust experiment tracking. All model runs, parameters, and metrics will be logged automatically.
+
+1. Launch the MLflow Tracking Server
+Before running the training script, start the MLflow server in the background. This will allow you to view the experiment results in your browser.
+
+```
+# Start MLflow server on default host/port (http://127.0.0.1:5000)
+mlflow ui &
+```
+
+2. Run the Training Script
+The main script for running the classification experiments is located at src.train.
+
+To execute the project and log the results to the MLflow server, run on a different terminal:
+
+```
+# Run the main training file
+python src.train
+```
+
+## 🔬 Viewing Experiment Results
+After running the project, you can analyze the results:
+
+    - Open your web browser and navigate to the MLflow UI address (usually http://127.0.0.1:5000).
+
+    - Select your experiment 
+
+    - You will see a list of runs, where you can compare the metrics (Accuracy, F1, ROC-AUC) and artifacts (like confusion matrices) for each model (LGBM, XGBoost, CatBoost)
+
+##
+
+```
+
+├── src/
+│   ├── __init__.py
+│   ├── extract.py
+│   ├── load.py
+│   ├── transform
+│   └── train.py         
+├── requirements.txt  
+└── README.md    
+```
+
 ## Models Evaluated
 
 The following machine learning models were included in this evaluation:
