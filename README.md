@@ -33,6 +33,29 @@ The evaluation of each model under these strategies was quantified using the fol
 *   **APS (Average Precision Score):** The area under the precision-recall curve, useful for imbalanced datasets.
 *   **ROC-AUC (Receiver Operating Characteristic - Area Under Curve):** A measure of a classifier's performance across all possible classification thresholds, indicating its ability to distinguish between classes.
 
+## Results
+Here is the original data in a markdown table format:
+
+``` 
+
+| Model           | Evaluation Strategy | Accuracy | Precision Score | Recall Score | F1 Score | APS Score | ROC-AUC |
+| :-------------: | :-----------------: | :------: | :-------------: | :----------: | :------: | :-------: | :-----: |
+| LGBM            | F1                  | 0.999    | 0.8493          | 0.7881       | 0.8176   | 0.6697    | 0.894   |
+|                 | Precision           | 0.9995   | 0.8981          | 0.7839       | 0.8371   | 0.7043    | 0.8919  |
+|                 | Recall              | 0.9764   | 0.8298          | 0.8855       | 0.8444   | 0.9527    | 0.9377  |
+| XGBoost         | F1                  | 0.9993   | 0.8122          | 0.7881       | 0.8      | 0.6405    | 0.8939  |
+|                 | Precision           | 0.9999   | 0.8202          | 0.7924       | 0.806    | 0.6602    | 0.896   |
+|                 | Recall              | 0.9804   | 0.0695          | 0.8686       | 0.1286   | 0.0606    | 0.9246  |
+| CatBoost (CB)   | F1 score            | 0.9995   | 0.9474          | 0.7687       | 0.845    | 0.733     | 0.8813  |
+|                 | Precision           | 0.9995   | 0.9524          | 0.7627       | 0.7968   | 0.7043    | 0.8813  |
+|                 | Recall              | 0.9995   | 0.9596          | 0.7869       | 0.8498   | 0.731     | 0.8834  |
+| Isolation Trees | F1 Score            | 0.9972   | 0.2524          | 0.3347       | 0.2878   | 0.085     | 0.6665  |
+|                 | Precision           | 0.9982   | 0.375           | 0.1144       | 0.1753   | 0.0444    | 0.557   |
+|                 | Recall              | 0.5099   | 0.0033          | 0.9704       | 0.0065   | 0.0238    | 0.7397  |
+
+```
+
+
 ## Key Findings and Trends
 
 The analysis of the model evaluation data revealed several interesting trends and patterns:
