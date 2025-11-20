@@ -1,0 +1,9 @@
+apache-airflow
+duckdb
+pandas
+scikit-learn
+mlflow
+fastapi
+uvicorn
+sqlalchemy
+kaggle
